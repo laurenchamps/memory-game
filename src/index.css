@@ -52,13 +52,15 @@ main {
   margin: 0 auto;
 }
 
-.container {
+.list-countries {
   display: grid;
+  row-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .country {
-  background-color: palevioletred;
+  background-color: rgb(254, 198, 198);
+  padding: 1rem;
   width: 15rem;
   height: 22rem;
   justify-self: center;
@@ -67,4 +69,12 @@ main {
   align-items: center;
   gap: 2rem;
   justify-content: center;
+}
+
+.country-name {
+  text-align: center;
+}
+
+.flag {
+  font-size: 6rem;
 }
