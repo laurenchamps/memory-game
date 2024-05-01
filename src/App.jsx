@@ -6,7 +6,7 @@ import CountryList from './CountryList';
 
 // `https://restcountries.com/v3.1/all?fields=cca3,name,flag`
 
-const NUMBER_OF_COUNTRIES = 4;
+const NUMBER_OF_COUNTRIES = 8;
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -97,6 +97,10 @@ function App() {
     <>
       <header className="header">
         <h1>Memory Game</h1>
+        <p>
+          Score points by clicking on a country, but don't click any country
+          more than once!
+        </p>
         <ScoreBoard score={score} highScore={highScore} />
       </header>
       <main>
@@ -109,6 +113,12 @@ function App() {
         )}
         {error && <ErrorMessage message={error} />}
       </main>
+      <footer className="footer">
+        <p>
+          Built by <a href="https://github.com/laurenchamps">Lauren Champs</a>{' '}
+          &copy;2024
+        </p>
+      </footer>
     </>
   );
 }
